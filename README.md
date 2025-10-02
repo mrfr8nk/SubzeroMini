@@ -1,266 +1,264 @@
+SUBZERO MD MINI BOT
 
-🤖 SubZero MD Mini Bot
+A powerful multi-device WhatsApp bot with 50+ features built with Baileys MD.
 
-<div align="center"><img src="https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png" width="500" alt="SubZero MD Mini Bot Preview"/>🚀 A Powerful Multi-Device WhatsApp Bot with 50+ Features
-
-  
-
-Built with: Baileys MD • Multi-Device Support • 24/7 Uptime
-
-</div>
----
-
-✨ Features
-
-🤖 Core
-
-✅ Multi-Device Support
-
-✅ Auto Session Backup (GitHub)
-
-✅ Auto Reconnect
-
-✅ Baileys MD (latest protocol)
-
-
-📥 Media Downloaders
-
-🎵 YouTube (Audio & Video)
-
-📹 TikTok, Facebook, Instagram Reels
-
-🖼️ Pinterest, MediaFire, APK Downloader
-
-
-🔍 Search & Info
-
-🎬 IMDb Movies
-
-👤 GitHub Stalk
-
-📦 NPM Search
-
-🌤️ Weather & 📰 News
-
-🏏 Cricket Live Scores
-
-🎌 Anime Downloader
-
-
-🎨 AI & Creative
-
-🤖 GPT-Powered Chat
-
-🎨 AI Image Generation
-
-🎯 Logo Maker & Fancy Text
-
-📟 QR Code (Generate & Scan)
-
-
-⚙️ Utilities
-
-☁️ CDN Uploader
-
-🔗 URL Shortener
-
-📸 Website Screenshot
-
-👤 Profile Info
-
-🖼️ Set Bot DP
-
-
-👑 Admin
-
-📊 Session Manager
-
-📢 Broadcast
-
-⚙️ Settings Panel
-
-🔄 Auto Backup
-
-
-🔄 Automation
-
-👀 Auto Status View
-
-❤️ Auto React
-
-📰 Auto Channel Follow
-
-🗑️ Anti-Delete
-
-⏺️ Auto Recording
-
-
-
----
+https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png
 
 🚀 Quick Deploy
 
-Option 1: Koyeb (Recommended – Free Forever)
+Koyeb (Recommended - Always Free)
 
+Deploy on Koyeb
 
+Railway
 
-Option 2: Railway
+Deploy on Railway
 
+Render
 
+Deploy on Render
 
-Option 3: Render
+✨ Features
 
+Core Features
 
+· Multi-device support
+· Auto session backup to GitHub
+· Auto reconnect
+· Baileys MD framework
 
+Media Downloaders
 
----
+· YouTube (audio & video)
+· TikTok videos
+· Facebook videos
+· Instagram content
+· Pinterest images
+· MediaFire files
+· APK downloads
+
+Search & Information
+
+· IMDb movie info
+· GitHub user lookup
+· NPM package search
+· Weather information
+· News updates
+· Cricket scores
+· Anime videos
+
+AI & Creative
+
+· AI chat (GPT-powered)
+· AI image generation
+· Logo maker
+· Fancy text generator
+· QR code generator/reader
+
+Utility Tools
+
+· CDN upload
+· URL shortener
+· Website screenshot
+· Profile info lookup
+· Set profile picture
+
+Admin Features
+
+· Session management
+· Broadcast messages
+· Settings panel
+· Auto backup
 
 🛠️ Local Installation
 
 Prerequisites
 
-Node.js 16+
+· Node.js 16+
+· GitHub account
+· WhatsApp number
 
-GitHub Account
+Setup Steps
 
-WhatsApp Number
+1. Clone the repository
 
-
-# Clone repo
+```bash
 git clone https://github.com/mrfr8nk/subzero-mini.git
 cd subzero-mini
+```
 
-# Install dependencies
+1. Install dependencies
+
+```bash
 npm install
+```
 
+1. Create environment file
+
+```bash
 # Create .env file
-echo "GITHUB_TOKEN=yourtoken
-GITHUB_OWNER=yourusername
-GITHUB_REPO=subzero-mini" > .env
+echo "GITHUB_TOKEN=your_github_token_here" > .env
+echo "GITHUB_OWNER=your_github_username" >> .env
+echo "GITHUB_REPO=subzero-mini" >> .env
+```
 
-# Start bot
+1. Get GitHub Token
+   · Go to GitHub Settings → Developer settings → Personal access tokens
+   · Generate new token with repo permissions
+   · Copy token to your .env file
+2. Run the bot
+
+```bash
 npm start
+```
 
-Pair your number:
-👉 Visit http://localhost:3000/pair?number=YOUR_NUMBER
-
-
----
+1. Pair your number
+   · Visit: http://localhost:3000/pair?number=YOUR_NUMBER
+   · Replace YOUR_NUMBER with your WhatsApp number (include country code)
+   · Scan the QR code with WhatsApp
 
 ⚙️ Environment Variables
 
-Variable	Required	Description	Example
+Variable Required Description
+GITHUB_TOKEN Yes GitHub Personal Access Token
+GITHUB_OWNER Yes Your GitHub username
+GITHUB_REPO Yes Repository name
+OWNER_NUMBER No Bot owner number (default: 263719647303)
+PREFIX No Command prefix (default: .)
 
-GITHUB_TOKEN	✅	GitHub PAT with repo access	ghp_abc123...
-GITHUB_OWNER	✅	Your GitHub username	mrfr8nk
-GITHUB_REPO	✅	Repository name	subzero-mini
-OWNER_NUMBER	❌	Bot owner number	263719647303
-PREFIX	❌	Command prefix	.
+📱 Basic Commands
 
+```
+.menu          - Main menu with all categories
+.alive         - Check bot status  
+.ping          - Test response speed
+.help          - All commands list
+```
 
+Media Download Examples
 
----
+```
+.song baby shark          - Download YouTube audio
+.tiktok [url]            - Download TikTok video
+.fb [url]                - Download Facebook video
+.ig [url]                - Download Instagram content
+.apk islam360            - Download APK file
+```
 
-📱 Bot Usage
+Search Commands
 
-.menu       # Main menu
-.alive      # Bot status
-.ping       # Response speed
-.help       # All commands
+```
+.imdb avengers            - Movie information
+.gitstalk mrfr8nk        - GitHub user info
+.weather london          - Weather information
+.news                    - Latest news
+.cricket                 - Cricket updates
+```
 
-Media
+AI Commands
 
-.song baby shark
-.tiktok <url>
-.fb <url>
-.ig <url>
-.apk islam360
+```
+.ai [question]           - Chat with AI
+.aiimg [prompt]         - Generate AI image
+.logo [text]            - Create text logo
+.fancy [text]           - Fancy text styles
+```
 
-Search
+👑 Admin Commands
 
-.imdb avengers
-.gitstalk mrfr8nk
-.weather london
-.news
-.cricket
+```
+.sessions      - View all active sessions
+.settings      - Bot configuration panel  
+.broadcast     - Send message to all users
+.setpp         - Set bot profile picture (reply to image)
+.restart       - Restart bot
+.stats         - Bot statistics
+```
 
-AI
+🔧 API Endpoints
 
-.ai What is AI?
-.aiimg cute cat wearing hat
-.logo SubZero
-.fancy hello world
-
-
----
+Endpoint Method Description
+/ GET Home page
+/pair?number=XXX GET Pair new number
+/active GET View active sessions
+/reconnect GET Reconnect all sessions
+/ping GET Health check
 
 🏗️ Project Structure
 
+```
 subzero-mini/
-├── session/          # Session storage
-├── admin.json        # Admin list
-├── numbers.json      # Connected numbers
-├── index.js          # Main app
-├── msg.js            # Message handlers
-├── .env              # Config
-└── package.json      # Dependencies
-
-
----
+├── session/              # Session storage
+├── admin.json           # Admin list
+├── numbers.json         # Connected numbers
+├── index.js            # Main application
+├── msg.js              # Message handlers
+├── .env               # Environment variables
+└── package.json       # Dependencies
+```
 
 🤝 Contributing
 
-1. Fork the repo
-
-
-2. Create a branch (feature/new)
-
-
-3. Commit your changes
-
-
-4. Push & open a PR
-
-
-
-
----
+1. Fork the repository
+2. Create your feature branch (git checkout -b feature/AmazingFeature)
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
+4. Push to the branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
 📞 Support
 
 Developer: Mr Frank OFC
-📱 WhatsApp: +263 719 647 303
-🐙 GitHub: @mrfr8nk
-📧 Email: mrfr8nk@protonmail.com
+WhatsApp: +263 719 647 303
+GitHub: @mrfr8nk
+Email: mrfr8nk@protonmail.com
 
+Support Channels
 
----
+· WhatsApp: Direct message for support
+· GitHub Issues: Bug reports & feature requests
+· Documentation: This README
+
+⚠️ Troubleshooting
+
+Common Issues
+
+QR Code Not Generating
+
+· Check if number includes country code
+· Verify server is running properly
+· Check environment variables
+
+Session Not Saving
+
+· Verify GitHub token has repo permissions
+· Check repository exists and is accessible
+· Ensure environment variables are correct
+
+Media Downloads Failing
+
+· Some APIs may have rate limits
+· Check internet connectivity
+· Try different download sources
 
 🔒 Security
 
-✅ Encrypted sessions
-
-✅ Token protection
-
-✅ Admin-only commands
-
-✅ OTP for sensitive ops
-
-
-
----
+· Session encryption via Baileys
+· GitHub token protected
+· Admin-only sensitive commands
+· OTP verification for critical operations
 
 📄 License
 
-MIT License – see LICENSE file.
+This project is licensed under the MIT License.
 
+🙏 Credits
+
+· Baileys MD - @adiwajshing
+· APIs - Various third-party services
+· Development - Mr Frank OFC
 
 ---
 
-<div align="center">⭐ Star this repo if you like it!
 Made with ❤️ by Mr Frank OFC
 
-</div>
----
-
-
+Subzero MD Mini Bot - Powerful, Reliable, Feature-Rich
