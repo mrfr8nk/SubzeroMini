@@ -1,33 +1,29 @@
-SUBZERO MD MINI BOT
+# SUBZERO MD MINI BOT
 
 A powerful multi-device WhatsApp bot with 50+ features built with Baileys MD.
 
-https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png
+< img src="https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png">
 
 🚀 Quick Deploy
-
-Koyeb (Recommended - Always Free)
-
+# Koyeb (Recommended - Always Free)
 Deploy on Koyeb
 
-Railway
-
+# Railway
 Deploy on Railway
 
-Render
-
+# Render
 Deploy on Render
 
-✨ Features
+# ✨ Features
 
-Core Features
+## Core Features
 
 · Multi-device support
 · Auto session backup to GitHub
 · Auto reconnect
 · Baileys MD framework
 
-Media Downloaders
+## Media Downloaders
 
 · YouTube (audio & video)
 · TikTok videos
@@ -37,7 +33,7 @@ Media Downloaders
 · MediaFire files
 · APK downloads
 
-Search & Information
+## Search & Information
 
 · IMDb movie info
 · GitHub user lookup
@@ -47,7 +43,7 @@ Search & Information
 · Cricket scores
 · Anime videos
 
-AI & Creative
+## AI & Creative
 
 · AI chat (GPT-powered)
 · AI image generation
@@ -55,7 +51,7 @@ AI & Creative
 · Fancy text generator
 · QR code generator/reader
 
-Utility Tools
+## Utility Tools
 
 · CDN upload
 · URL shortener
@@ -63,22 +59,22 @@ Utility Tools
 · Profile info lookup
 · Set profile picture
 
-Admin Features
+## Admin Features
 
 · Session management
 · Broadcast messages
 · Settings panel
 · Auto backup
 
-🛠️ Local Installation
+## 🛠️ Local Installation
 
-Prerequisites
+# Prerequisites
 
 · Node.js 16+
 · GitHub account
 · WhatsApp number
 
-Setup Steps
+# Setup Steps
 
 1. Clone the repository
 
