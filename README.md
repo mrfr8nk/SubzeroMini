@@ -2,7 +2,7 @@
 
 A powerful multi-device WhatsApp bot with 50+ features built with Baileys MD.
 
-< img src="https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png">
+<img src="https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png">
 
 🚀 Quick Deploy
 # Koyeb (Recommended - Always Free)
