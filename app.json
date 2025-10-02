@@ -1,0 +1,31 @@
+{
+  "name": "SUBZERO-MINI",
+  "description": "NodeJs Mini Whatsapp bot By Mr Frank",
+  "logo": "https://mrfrankk-cdn.hf.space/mrfrank/subzero.png",
+  "keywords": ["SUBZERO-MD"],
+  "success_url": "/",
+  "stack": "heroku-24",
+  "env": {
+    "GITHUB_TOKEN": {
+      "description": "Your GitHub Personal Access Token",
+      "required": true,
+      "value": "ghp_your_actual_token_here"
+    },
+    "GITHUB_OWNER": {
+      "description": "Your GitHub username or organization",
+      "required": true,
+      "value": "your_github_username"
+    },
+    "GITHUB_REPO": {
+      "description": "Your GitHub repository name",
+      "required": true,
+      "value": "your_repo_name"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ]
+}
+
