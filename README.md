@@ -1,17 +1,17 @@
-# SUBZERO MD MINI BOT
+# SUBZERO MINI BOT
 
 A powerful multi-device WhatsApp bot with 50+ features built with Baileys MD.
 
 <img src="https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png">
 
 🚀 Quick Deploy
-# Koyeb (Recommended - Always Free)
+## Koyeb (Recommended - Always Free)
 Deploy on Koyeb
 
-# Railway
+## Railway
 Deploy on Railway
 
-# Render
+## Render
 Deploy on Render
 
 # ✨ Features
