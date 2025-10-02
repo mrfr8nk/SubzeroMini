@@ -1,461 +1,338 @@
-🤖 SUBZERO MD MINI BOT - DEPLOYMENT GUIDE
+🤖 SUBZERO MD MINI BOT
 
-Developer: Mr Frank OFC
-Version: 2.0.0
-Repository: GitHub Repository
+<div align="center">
 
----
+https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png
 
-📋 TABLE OF CONTENTS
+A Powerful Multi-Device WhatsApp Bot with 50+ Features
 
-1. Features Overview
-2. Prerequisites
-3. Local Setup
-4. Environment Configuration
-5. Deployment Guides
-6. Troubleshooting
-7. Maintenance
+https://www.koyeb.com/static/images/deploy/button.svg https://railway.app/button.svg https://render.com/images/deploy-to-render-button.svg
 
----
+Built with Baileys MD • Multi-Device Support • 24/7 Active
 
-🚀 FEATURES OVERVIEW
+</div>
 
-🤖 CORE FEATURES
+✨ FEATURES
 
-· Multi-device Support: Connect multiple WhatsApp numbers simultaneously
-· Baileys MD Framework: Latest WhatsApp Web protocol implementation
-· Auto-reconnection: Automatic session recovery on disconnect
-· Session Management: GitHub-based session storage and synchronization
+🤖 Core Features
 
-📱 MEDIA DOWNLOADERS
+· ✅ Multi-Device Support - Connect multiple numbers simultaneously
+· ✅ Auto Session Backup - GitHub-based session storage
+· ✅ Auto Reconnect - Automatic recovery on disconnect
+· ✅ Baileys MD - Latest WhatsApp Web protocol
 
-· YouTube: Audio and video downloads with quality options
-· TikTok: Video and audio extraction
-· Facebook: Video downloader
-· Instagram: Reels and posts download
-· Pinterest: Image batch downloads
-· MediaFire: File downloader
-· APK Downloader: Direct APK downloads
+📥 Media Downloaders
 
-🔍 SEARCH & INFORMATION
+· 🎵 YouTube - Audio & video downloads with quality options
+· 📹 TikTok - Video & audio extraction
+· 📹 Facebook - Video downloader
+· 📷 Instagram - Reels & posts download
+· 🖼️ Pinterest - Image batch downloads
+· 📦 MediaFire - File downloader
+· 📱 APK Downloader - Direct APK downloads
 
-· IMDb: Movie information and ratings
-· GitHub Stalk: User profile information
-· NPM Search: Package information
-· Weather: Real-time weather data
-· News: Latest news from multiple sources
-· Cricket: Live scores and updates
-· Zoom.lk: News search
-· Cinesubz: Movie search
+🔍 Search & Information
 
-🎨 AI & CREATIVE
+· 🎬 IMDb - Movie information & ratings
+· 👤 GitHub Stalk - User profile information
+· 📦 NPM Search - Package information
+· 🌤️ Weather - Real-time weather data
+· 📰 News - Latest news from multiple sources
+· 🏏 Cricket - Live scores & updates
+· 🎌 Anime - Anime video downloads
 
-· AI Chat: GPT-powered conversations
-· AI Image Generation: Text-to-image creation
-· Logo Maker: Custom text logos
-· Fancy Text: Text styling and formatting
-· QR Code: Generation and reading
+🎨 AI & Creative
 
-⚙️ UTILITY TOOLS
+· 🤖 AI Chat - GPT-powered conversations
+· 🎨 AI Image Generation - Text-to-image creation
+· 🎯 Logo Maker - Custom text logos
+· ✨ Fancy Text - Text styling & formatting
+· 📟 QR Code - Generation & reading
 
-· CDN Upload: Media to URL conversion
-· URL Shortener: Link shortening service
-· Screenshot: Website screenshots
-· Profile Info: User information lookup
-· Weather: Location-based weather
-· QR Code: Generate and scan QR codes
+⚙️ Utility Tools
 
-👑 ADMIN FEATURES
+· ☁️ CDN Upload - Media to URL conversion
+· 🔗 URL Shortener - Link shortening service
+· 📸 Screenshot - Website screenshots
+· 👤 Profile Info - User information lookup
+· 🖼️ Set Profile Picture - Change bot DP
 
-· Session Management: View and control all active sessions
-· Broadcast: Send messages to multiple users
-· Settings Panel: Dynamic configuration changes
-· Auto-backup: GitHub-based session storage
-· Multi-admin: Support for multiple administrators
+👑 Admin Features
 
-🔄 AUTOMATION
+· 📊 Session Management - View & control all sessions
+· 📢 Broadcast - Send messages to multiple users
+· ⚙️ Settings Panel - Dynamic configuration
+· 🔄 Auto Backup - GitHub-based session storage
 
-· Auto Status View: Automatic status viewing
-· Auto Like: Automatic status reactions
-· Newsletter Auto-follow: Automatic channel following
-· Anti-delete: Message deletion detection
-· Auto Recording: Automatic recording presence
+🔄 Automation
 
----
+· 👀 Auto Status View - Automatic status viewing
+· ❤️ Auto Like - Automatic status reactions
+· 📰 Newsletter Auto-follow - Automatic channel following
+· 🗑️ Anti-delete - Message deletion detection
+· ⏺️ Auto Recording - Automatic recording presence
 
-⚙️ PREREQUISITES
+🚀 QUICK DEPLOY
 
-Required Accounts
+Option 1: Koyeb (Recommended - Always Free)
 
+https://www.koyeb.com/static/images/deploy/button.svg
+
+1. Click the Koyeb button above
+2. Connect your GitHub account
+3. Add environment variables:
+   · GITHUB_TOKEN - Your GitHub Personal Access Token
+   · GITHUB_OWNER - Your GitHub username
+   · GITHUB_REPO - Repository name
+4. Deploy!
+
+Option 2: Railway
+
+https://railway.app/button.svg
+
+1. Click Railway button
+2. Fork repository first
+3. Add environment variables in Railway dashboard
+4. Deploy automatically
+
+Option 3: Render
+
+https://render.com/images/deploy-to-render-button.svg
+
+1. Click Render button
+2. Connect GitHub repository
+3. Set environment variables
+4. Deploy web service
+
+🛠️ LOCAL INSTALLATION
+
+Prerequisites
+
+· Node.js 16 or higher
 · GitHub Account
-· WhatsApp Account
-· Deployment Platform Account (Render/Koyeb/Heroku/Railway)
+· WhatsApp Number
 
-Technical Requirements
+Step-by-Step Setup
 
-· Node.js 16+
-· Git
-· GitHub Personal Access Token
-
----
-
-🛠 LOCAL SETUP
-
-Step 1: Clone Repository
+1. Clone Repository
 
 ```bash
 git clone https://github.com/mrfr8nk/subzero-mini.git
 cd subzero-mini
 ```
 
-Step 2: Install Dependencies
+1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-Step 3: Environment Configuration
+1. Create Environment File
 
-Create .env file:
-
-```env
-# GitHub Configuration
-GITHUB_TOKEN=ghp_your_github_token_here
+```bash
+# Create .env file
+cat > .env << EOL
+GITHUB_TOKEN=your_github_token_here
 GITHUB_OWNER=your_github_username
-GITHUB_REPO=your_repo_name
-
-# Bot Configuration (Optional)
-OWNER_NUMBER=263719647303
-PREFIX=.
-MAX_RETRIES=3
+GITHUB_REPO=subzero-mini
+EOL
 ```
 
-Step 4: Generate GitHub Token
-
-1. Go to GitHub Settings → Developer settings → Personal access tokens
-2. Generate new token with permissions:
-   · repo (Full control of private repositories)
-   · workflow (Update GitHub Action workflows)
-
-Step 5: Run Locally
+1. Get GitHub Token
+   · Go to GitHub Settings → Developer settings → Personal access tokens
+   · Generate new token with repo permissions
+   · Copy token to your .env file
+2. Run the Bot
 
 ```bash
 npm start
-# or
-node index.js
 ```
 
----
+1. Pair Your Number
+   · Visit http://localhost:3000/pair?number=YOUR_NUMBER
+   · Replace YOUR_NUMBER with your WhatsApp number (include country code)
+   · Scan the QR code with WhatsApp
 
-🔧 ENVIRONMENT CONFIGURATION
+⚙️ ENVIRONMENT VARIABLES
 
-Required Environment Variables
+Variable Required Description Example
+GITHUB_TOKEN ✅ GitHub Personal Access Token ghp_abc123...
+GITHUB_OWNER ✅ Your GitHub username yourusername
+GITHUB_REPO ✅ Repository name subzero-mini
+OWNER_NUMBER ❌ Bot owner number 263719647303
+PREFIX ❌ Command prefix .
 
-Variable Description Example
-GITHUB_TOKEN GitHub Personal Access Token ghp_abc123...
-GITHUB_OWNER GitHub username/organization mrfr8nk
-GITHUB_REPO Repository name subzero-mini
-
-Optional Configuration
-
-Variable Default Description
-OWNER_NUMBER 263719647303 Bot owner's WhatsApp number
-PREFIX . Command prefix
-MAX_RETRIES 3 Connection retry attempts
-PORT 3000 Server port
-
----
-
-🚀 DEPLOYMENT GUIDES
-
-1. 🎨 RENDER DEPLOYMENT
-
-Steps:
-
-1. Fork Repository to your GitHub account
-2. Create Render Account at render.com
-3. New Web Service → Connect GitHub repository
-4. Configure Service:
-   · Name: subzero-mini
-   · Environment: Node
-   · Region: Choose nearest
-   · Branch: main
-   · Root Directory: (leave empty)
-   · Build Command: npm install
-   · Start Command: npm start
-5. Environment Variables:
-   ```env
-   GITHUB_TOKEN=your_github_token
-   GITHUB_OWNER=your_username
-   GITHUB_REPO=subzero-mini
-   ```
-6. Create Service
-
-Render Specifications:
-
-· Plan: Free tier available
-· Bandwidth: 100GB/month free
-· Build Time: 100 mins/month free
-· Sleep: Auto-sleeps after 15 mins inactivity
-
-2. 🌐 KOYEB DEPLOYMENT
-
-Steps:
-
-1. Sign Up at koyeb.com
-2. Create App → GitHub deployment
-3. Select Repository from your forked repo
-4. Configure App:
-   · App Name: subzero-mini
-   · Environment: Node.js
-   · Build Command: npm install
-   · Run Command: npm start
-5. Environment Variables: Add all required environment variables
-6. Deploy
-
-Koyeb Advantages:
-
-· Always Free: 2 services free forever
-· No Sleep: Services don't auto-sleep
-· Global CDN: Multiple regions
-· Auto HTTPS: SSL certificates
-
-3. ⚡ RAILWAY DEPLOYMENT
-
-Steps:
-
-1. Sign Up at railway.app
-2. New Project → Deploy from GitHub repo
-3. Configure Variables:
-   · Go to Project → Variables tab
-   · Add all environment variables
-4. Automatic Deployment:
-   · Railway auto-detects Node.js app
-   · Automatic builds on git push
-
-Railway Specs:
-
-· Free Tier: $5 credit monthly
-· No Sleep: Services stay active
-· Custom Domains: Free subdomains
-· Database: PostgreSQL available
-
-4. 🦸 HEROKU DEPLOYMENT
-
-Steps:
-
-1. Create Heroku Account at heroku.com
-2. Install Heroku CLI:
-   ```bash
-   npm install -g heroku
-   heroku login
-   ```
-3. Prepare App:
-   ```bash
-   # Add Procfile
-   echo "web: npm start" > Procfile
-   
-   # Commit changes
-   git add .
-   git commit -m "Prepare for Heroku"
-   ```
-4. Deploy:
-   ```bash
-   heroku create your-app-name
-   heroku config:set GITHUB_TOKEN=your_token
-   heroku config:set GITHUB_OWNER=your_username
-   heroku config:set GITHUB_REPO=subzero-mini
-   git push heroku main
-   ```
-
-Heroku Notes:
-
-· Free Tier Discontinued: Now requires credit card
-· Eco Plan: $5/month for basic dyno
-· Auto Deployment: GitHub integration available
-
----
-
-🔐 SECURITY CONFIGURATION
-
-GitHub Token Security
-
-1. Never commit tokens to repository
-2. Use environment variables in deployment platform
-3. Regularly rotate tokens (every 90 days)
-4. Use fine-grained tokens with minimal permissions
-
-Bot Security Features
-
-· OTP Verification for sensitive operations
-· Admin-only commands protection
-· Session encryption via Baileys
-· Rate limiting on API calls
-
----
-
-📊 BOT USAGE GUIDE
-
-Initial Setup
-
-1. Deploy bot to chosen platform
-2. Access bot URL: https://your-app.render.com (or your domain)
-3. Pair Number: Visit /pair?number=YOUR_NUMBER
-4. Get QR Code: Scan with WhatsApp → Linked Devices
+📱 BOT USAGE
 
 Basic Commands
 
 ```bash
-.menu          # Main command menu
+.menu          # Main menu with all categories
 .alive         # Check bot status
-.ping          # Check response time
+.ping          # Test response speed
 .help          # All commands list
 ```
 
-Admin Commands
+Media Download Examples
 
 ```bash
-.sessions      # View active sessions
-.settings      # Bot configuration
+.song baby shark          # Download audio from YouTube
+.tiktok https://vm.tiktok.com/ABC123  # Download TikTok video
+.fb https://facebook.com/...  # Download Facebook video
+.ig https://instagram.com/... # Download Instagram content
+.apk islam360             # Download APK file
+```
+
+Search Commands
+
+```bash
+.imdb avengers            # Movie information
+.gitstalk mrfr8nk        # GitHub user info
+.weather london          # Weather information
+.news                    # Latest news
+.cricket                 # Cricket updates
+```
+
+AI Commands
+
+```bash
+.ai what is artificial intelligence?  # Chat with AI
+.aiimg cute cat wearing hat          # Generate AI image
+.logo Subzero                        # Create text logo
+.fancy hello world                   # Fancy text styles
+```
+
+🎯 ADMIN COMMANDS
+
+Session Management
+
+```bash
+.sessions      # View all active sessions
+.settings      # Bot configuration panel
 .broadcast     # Send message to all users
 ```
 
----
-
-🛠 TROUBLESHOOTING
-
-Common Issues & Solutions
-
-1. Session Not Saving
-
-Problem: Sessions not persisting after restart Solution:
-
-· Verify GitHub token has repo permissions
-· Check repository exists and is accessible
-· Ensure environment variables are set correctly
-
-2. QR Code Not Generating
-
-Problem: QR code endpoint returns error Solution:
-
-· Check server logs for errors
-· Verify number format (include country code)
-· Ensure server has internet access
-
-3. Media Downloads Failing
-
-Problem: Download commands not working Solution:
-
-· Check API endpoints are accessible
-· Verify internet connectivity
-· Some APIs may have rate limits
-
-4. Bot Going Offline
-
-Problem: Bot disconnects frequently Solution:
-
-· Use platforms that don't sleep (Koyeb/Railway)
-· Implement auto-reconnect in code
-· Check deployment platform uptime
-
-Logs & Monitoring
+Owner Only
 
 ```bash
-# Check application logs
-heroku logs --tail
-railway logs
-koyeb service logs
+.setpp         # Set bot profile picture (reply to image)
+.restart       # Restart bot
+.stats         # Bot statistics
 ```
 
----
+🔧 API ENDPOINTS
 
-🔄 MAINTENANCE
+Endpoint Method Description
+/ GET Home page
+/pair?number=XXX GET Pair new number
+/active GET View active sessions
+/reconnect GET Reconnect all sessions
+/ping GET Health check
 
-Regular Tasks
+🏗️ PROJECT STRUCTURE
 
-· Update dependencies monthly
-· Rotate GitHub tokens quarterly
-· Backup session data regularly
-· Monitor deployment platform usage
+```
+subzero-mini/
+├── session/              # Session storage
+├── admin.json           # Admin list
+├── numbers.json         # Connected numbers
+├── index.js            # Main application
+├── msg.js              # Message handlers
+├── .env               # Environment variables
+└── package.json       # Dependencies
+```
 
-Performance Optimization
+🤝 CONTRIBUTING
 
-· Use efficient platforms (Koyeb recommended)
-· Implement connection pooling
-· Cache frequently accessed data
-· Monitor memory usage
+We welcome contributions! Please feel free to submit pull requests.
 
-Cost Management
+1. Fork the repository
+2. Create your feature branch (git checkout -b feature/AmazingFeature)
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
+4. Push to the branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
-· Free Options: Koyeb (best), Railway ($5 credit)
-· Budget Options: Render (limited hours)
-· Production: Heroku Eco ($5/month)
+📞 SUPPORT
 
----
+Developer Contact
 
-📞 SUPPORT & CONTACT
-
-Developer Information
-
-· Name: Mr Frank OFC
+· Developer: Mr Frank OFC
 · WhatsApp: +263 719 647 303
-· GitHub: mrfr8nk
+· GitHub: @mrfr8nk
 · Email: mrfr8nk@protonmail.com
 
 Support Channels
 
-1. GitHub Issues: Bug reports and feature requests
-2. WhatsApp: Direct developer contact
-3. Documentation: Repository README
+· 📱 WhatsApp: Direct message for support
+· 🐛 GitHub Issues: Bug reports & feature requests
+· 📚 Documentation: This README
 
-Credits
+⚠️ TROUBLESHOOTING
 
-· Framework: Baileys MD (@adiwajshing)
-· APIs: Multiple third-party services
-· Deployment: Render, Koyeb, Railway, Heroku
-· Development: Mr Frank OFC
+Common Issues
+
+QR Code Not Generating
+
+· Check if number includes country code
+· Verify server is running properly
+· Check environment variables
+
+Session Not Saving
+
+· Verify GitHub token has repo permissions
+· Check repository exists and is accessible
+· Ensure environment variables are correct
+
+Media Downloads Failing
+
+· Some APIs may have rate limits
+· Check internet connectivity
+· Try different download sources
+
+Logs & Debugging
+
+```bash
+# Check application logs
+npm start
+
+# For deployment platforms
+# Check platform-specific logs dashboard
+```
+
+🔒 SECURITY
+
+· ✅ Session encryption via Baileys
+· ✅ GitHub token protected
+· ✅ Admin-only sensitive commands
+· ✅ OTP verification for critical operations
+
+📄 LICENSE
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 CREDITS
+
+· Baileys MD - @adiwajshing
+· APIs - Various third-party services
+· Development - Mr Frank OFC
+
+🆘 NEED HELP?
+
+If you encounter any issues:
+
+1. Check this README first
+2. Check GitHub Issues for similar problems
+3. Contact developer on WhatsApp
+4. Create a new GitHub issue
 
 ---
 
-🎯 RECOMMENDED DEPLOYMENT
+<div align="center">
 
-🥇 BEST CHOICE: KOYEB
+⭐ Don't forget to star the repository if you find this project useful!
 
-· ✅ Always free
-· ✅ No sleep
-· ✅ Global CDN
-· ✅ Easy setup
+Made with ❤️ by Mr Frank OFC
 
-🥈 SECOND CHOICE: RAILWAY
+Subzero MD Mini Bot - Powerful, Reliable, Feature-Rich
 
-· ✅ $5 monthly credit
-· ✅ No sleep
-· ✅ Great performance
-
-🥉 THIRD CHOICE: RENDER
-
-· ⚠️ Free but sleeps
-· ✅ Easy to use
-· ✅ Good documentation
-
-💰 PAID OPTION: HEROKU
-
-· ❌ No free tier
-· ✅ Reliable
-· ✅ Extensive features
-
----
-
-📝 FINAL NOTES
-
-1. Always fork the repository before deployment
-2. Keep your GitHub token secure
-3. Test locally before deploying
-4. Monitor your bot's performance
-5. Join the support channel for updates
-
-Happy Bot Building! 🚀
-
----
-
-Documentation provided by Mr Frank OFC - Subzero MD Mini Bot v2.0.0
+</div>
