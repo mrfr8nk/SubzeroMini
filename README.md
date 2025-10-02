@@ -7,6 +7,9 @@ A powerful multi-device WhatsApp bot with 50+ features built with Baileys MD.
 ---
 
 # 🚀 Quick Deploy
+## Heroku
+Deploy on <a href="https://dashboard.heroku.com/new?template=https://github.com/mrfr8nk/subzeromini/tree/main">Heroku</a>
+
 ## Koyeb 
 Deploy on <a href="koyeb.com">Koyeb</a>
 
@@ -113,18 +116,17 @@ npm start
 ```
 
 1. Pair your number
-   · Visit: http://localhost:3000/pair?number=YOUR_NUMBER
+   · Visit: http://localhost:7860/pair?number=YOUR_NUMBER
    · Replace YOUR_NUMBER with your WhatsApp number (include country code)
    · Scan the QR code with WhatsApp
 
 ⚙️ Environment Variables
 
 Variable Required Description
-GITHUB_TOKEN Yes GitHub Personal Access Token
-GITHUB_OWNER Yes Your GitHub username
-GITHUB_REPO Yes Repository name
-OWNER_NUMBER No Bot owner number (default: 263719647303)
-PREFIX No Command prefix (default: .)
+`GITHUB_TOKEN` Yes GitHub Personal Access Token
+`GITHUB_OWNER` Yes Your GitHub username
+`GITHUB_REPO` Yes Repository name
+
 
 📱 Basic Commands
 
@@ -197,7 +199,7 @@ subzero-mini/
 └── package.json       # Dependencies
 ```
 
-🤝 Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (git checkout -b feature/AmazingFeature)
@@ -205,20 +207,20 @@ subzero-mini/
 4. Push to the branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
-📞 Support
+## 📞 Support
 
 Developer: Mr Frank OFC
 WhatsApp: +263 719 647 303
-GitHub: @mrfr8nk
-Email: mrfr8nk@protonmail.com
+GitHub: github.com/mrfr8nk
+Email: mrfr4nkofc@gmail.com com
 
-Support Channels
+## Support Channels
 
 · WhatsApp: Direct message for support
 · GitHub Issues: Bug reports & feature requests
 · Documentation: This README
 
-⚠️ Troubleshooting
+## ⚠️ Troubleshooting
 
 Common Issues
 
@@ -234,31 +236,34 @@ Session Not Saving
 · Check repository exists and is accessible
 · Ensure environment variables are correct
 
-Media Downloads Failing
+## Media Downloads Failing
 
 · Some APIs may have rate limits
 · Check internet connectivity
 · Try different download sources
 
-🔒 Security
+## 🔒 Security
 
 · Session encryption via Baileys
 · GitHub token protected
 · Admin-only sensitive commands
 · OTP verification for critical operations
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 
-🙏 Credits
+## 🙏 Credits
 
 · Baileys MD - @adiwajshing
+
 · APIs - Various third-party services
+
 · Development - Mr Frank OFC
 
 ---
 
-Made with ❤️ by Mr Frank OFC
 
-Subzero MD Mini Bot - Powerful, Reliable, Feature-Rich
+> Made with ❤️ by Mr Frank OFC
+
+```Subzero MD Mini Bot - Powerful, Reliable, Feature-Rich```
