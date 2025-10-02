@@ -3,6 +3,7 @@
 A powerful multi-device WhatsApp bot with 50+ features built with Baileys MD.
 
 <img src="https://mrfrankk-cdn.hf.space/mrfrank/mini/menu.png">
+
 ---
 
 # 🚀 Quick Deploy
@@ -14,7 +15,8 @@ Deploy on <a href="railway.app">Railway</a>
 
 ## Render
 Deploy on <a href ="render.com">Render</a>
-----
+
+---
 
 # ✨ Features
 
